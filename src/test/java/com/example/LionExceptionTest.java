@@ -12,7 +12,7 @@ public class LionExceptionTest {
 
     @Test(expected = Exception.class)
     public void LionException() throws Exception {
-        new Lion("самка", feline);
-        exception.expectMessage("Нужно использовать допустимые значения пола животного - самей или самка");
+        new Lion("Самец1", feline);
+        exception.expectMessage("Нужно использовать допустимые значения пола животного - Самец или Самка");
     }
 }
